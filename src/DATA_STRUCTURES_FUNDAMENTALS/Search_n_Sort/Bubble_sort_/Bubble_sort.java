@@ -1,4 +1,4 @@
-package DATA_STRUCTURES_FUNDAMENTALS.Search_n_Sort;
+package DATA_STRUCTURES_FUNDAMENTALS.Search_n_Sort.Bubble_sort_;
 
 import java.util.Arrays;
 
