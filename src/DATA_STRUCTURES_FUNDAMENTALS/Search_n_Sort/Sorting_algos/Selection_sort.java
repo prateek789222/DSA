@@ -4,11 +4,11 @@ import java.util.Arrays;
 
 public class Selection_sort {
     public static void main(String[] args) {
-        int[] arr={4,5,1,2,3,7,10,6,8,9};
-        System.out.println(Arrays.toString(insertion_sort(arr)));
+        int[] arr={4,5,1,2,3,7,10};
+        System.out.println(Arrays.toString(selection_sort(arr)));
     }
 
-    private static int[] insertion_sort(int[] arr) {
+    private static int[] selection_sort(int[] arr) {
         for (int i = 0; i <arr.length; i++) { //total n-1 iterations are required as first element will be sorted
             // automatically
              //As for n elements, n-1 comparisons are needed.
