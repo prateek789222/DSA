@@ -26,7 +26,7 @@ public class Bubble_sort {
                         swap=true;
                     }
                 }
-                if(!swap)
+                if(!swap) //if for one full iteration swapping doesnt't occur, we can assume the array to be sorted
                     break;
             }
 
