@@ -17,7 +17,7 @@ public class Subset {
 
         for(int ele : arr){   //For each element ele, in arr = ex. [1,2,3]
             int n = outer.size();   //Gets the current size of the list outer.
-            for (int i = 0; i < n ; i++) {  //Iterates from 0 to the current size of the list outer
+            for (int i = 0; i < n ; i++) {  //if outer list has n lists, create n more duplicate lists
                 List<Integer> internal = new ArrayList<>(outer.get(i));   //Creates a new list(internal) that is a
                                                                             // copy of the list outer.get(i)
                 internal.add(ele);   //Adds the element ele to the list internal
@@ -27,3 +27,7 @@ public class Subset {
         return outer;
     }
 }
+
+
+//          i =   0      1      2
+//outer      [  [9,1], [8,2], [7,3], ]         outer.get(0) =  [9,1]
