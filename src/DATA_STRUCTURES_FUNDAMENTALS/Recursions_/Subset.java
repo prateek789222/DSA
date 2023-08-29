@@ -1,12 +1,9 @@
 package DATA_STRUCTURES_FUNDAMENTALS.Recursions_;
-
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class Subset {
     public static void main(String[] args) {
-        int[] array = {1,2,3};
+        int[] array = {1,2,2};
         System.out.println(ss(array));
     }
 
@@ -24,10 +21,11 @@ public class Subset {
                 outer.add(internal);  //Adds the list internal to the list outer
             }
         }
+        Set<Integer> s = new HashSet<>();
+
         return outer;
     }
 }
-
 
 //          i =   0      1      2
 //outer      [  [9,1], [8,2], [7,3], ]         outer.get(0) =  [9,1]
